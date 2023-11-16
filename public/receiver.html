@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Receiver</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="form">
+                <h2>Share your file securely</h2>
+                <div class="form-input">
+                    <label for="join-id">Join ID</label>
+                    <input type="text" id="join-id">
+                </div>
+                <div class="form-input">
+                    <button id="receiver-start-con-btn">Connect</button>
+                </div>
+            </div>
+        </div>
+        <div class="screen fs-screen">   
+            <div class="files-list">
+                <a href="index.html">Home</a>
+                <a href="receiver.html">Back</a>
+                <div class="title">shared files:</div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.1/download.min.js"></script>
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="receiver.js"></script>
+</body>
+</html>
